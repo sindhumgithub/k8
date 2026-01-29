@@ -4,5 +4,8 @@ metadata:
   name: app-config
   namespace: roboshop
 data:
-  APP_ENV: "production"
-  LOG_LEVEL: INFO
+  app.properties: |
+    APP_NAME=payment_service
+    LOG_LEVEL=INFO
+    MAX_CONNECTIONS=100
+    
