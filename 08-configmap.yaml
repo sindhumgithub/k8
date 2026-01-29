@@ -5,6 +5,4 @@ metadata:
   namespace: roboshop
 data:
   APP_ENV: "production"
-  DB_HOST: "mysql-service"
-  DB_PORT: "3306"
-  
+  LOG_LEVEL: INFO

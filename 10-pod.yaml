@@ -14,17 +14,12 @@ spec:
           name: app-config
           key: APP_ENV
 
-    - name: DB_HOST
+    - name: LOG_LEVEL
       valueFrom:
         configMapKeyRef:
           name: app-config
-          key: DB_HOST
-    
-    - name: DB_PORT
-      valueFrom:
-        configMapKeyRef:
-          name: app-config
-          key: DB_PORT
+          key: LOG_LEVEL
+  
 
     - name: DB_USER
       valueFrom:
