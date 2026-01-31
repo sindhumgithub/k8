@@ -8,13 +8,13 @@ spec:
   selector:
     matchLabels:
       app: ecommerce-frontend
-template:
-  metadata:
-    labels:
-      app: ecommerce-frontend
-spec:
-  containers:
-  - name: my-containers
-    image: nginx
-    ports:
-    - containerPort: 80
+  template:
+    metadata:
+      labels:
+        app: ecommerce-frontend
+    spec:
+      containers:
+      - name: my-containers
+        image: nginx
+        ports:
+        - containerPort: 80
