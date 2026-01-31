@@ -12,9 +12,9 @@ spec:
     metadata:
       labels:
         app: website
-  spec:
-    containers:
-    - name: website
-      image: nginx
-      ports:
-      - containerPort: 80
+    spec:
+      containers:
+      - name: website
+        image: nginx
+        ports:
+        - containerPort: 80
