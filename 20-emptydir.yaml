@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: emptydir-pod 
+  namespace: roboshop
+spec:
+  volumes:
+    - name: temp-storage
+      emptyDir: {}
+
+  containers:
+  - name: emptydir-container1
+    image: nginx
+    volumeMounts:
+    - mountPath: /data
+      name: temp-storage
+
+  - name: emptydir-container2
+    image: nginx
+    volumeMounts:
+    - mountPath: /data
+      name: temp-storage
+
