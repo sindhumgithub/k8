@@ -11,12 +11,14 @@ spec:
   containers:
   - name: emptydir-container1
     image: nginx
+    command: ["/bin/sh", "-c", "sleep 3600"]
     volumeMounts:
     - mountPath: /data
       name: temp-storage
 
   - name: emptydir-container2
     image: nginx
+    command: ["/bin/sh", "-c", "sleep 3600"]
     volumeMounts:
     - mountPath: /data
       name: temp-storage
