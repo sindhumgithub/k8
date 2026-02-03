@@ -7,7 +7,7 @@ spec:
   volumes:
   - name: hostpath-storage
     hostPath:
-      path: /tmp 
+      path: /tmp    #HostNode folder
       type: Directory
 
   containers:
@@ -15,5 +15,5 @@ spec:
     image: nginx
     volumeMounts:
       - name: hostpath-storage
-        mountPath: /data
+        mountPath: /data  #Container Folder
     
